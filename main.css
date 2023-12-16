@@ -7,14 +7,7 @@
     /*Body Variables*/
 }
 
-
-
-
-
-body {
-    background-color:black;
-}
-/* Main Header Layout*/
+/*Main Header Layout*/
 .mainHeader {
     display:block;
     background-color:white;
@@ -27,4 +20,8 @@ body {
 }
 .mainHeader p{
     color:blue;
+}
+/*Body Layout*/
+body {
+    background-color: black;
 }
