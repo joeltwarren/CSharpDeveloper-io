@@ -4,5 +4,7 @@ body {
 }
 .mainHeader {
     background-color:white;
+}
+p{
     color:blue;
 }
