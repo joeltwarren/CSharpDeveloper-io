@@ -2,9 +2,10 @@
 body {
     background-color: black;
 }
+/* Main Header Layout*/
 .mainHeader {
     background-color:white;
 }
-p{
+.mainHeader p{
     color:blue;
 }
