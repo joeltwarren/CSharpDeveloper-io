@@ -10,6 +10,7 @@
 /*Main Header Layout*/
 .mainHeader {
     border-radius:25px;
+    border:2px solid #00ff21;
     background-color: #f1f1f1;
     padding: 20px;
     text-align: center;
