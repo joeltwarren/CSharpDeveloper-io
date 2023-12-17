@@ -91,6 +91,7 @@ body {
 .navigation ul ul li a:hover{
     background-color: var(--backGroundColor);
     border-radius: var(--borderRadius);
+    border: var(--border);
 }
 /*Content 1 - Left Column*/
 .content1 {
