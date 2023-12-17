@@ -13,7 +13,7 @@
     padding: 20px;
     text-align: center;
 }
-.mainHeader p{
+p.mainHeader{
     color:blue;
 }
 /*Body Layout*/
