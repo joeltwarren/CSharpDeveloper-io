@@ -18,6 +18,9 @@
 .mainHeader p {
     color:blue;
 }
+.mainHeader h1{
+    color:yellow;
+}
 /*Body Layout*/
 body {
     background-color: black;
