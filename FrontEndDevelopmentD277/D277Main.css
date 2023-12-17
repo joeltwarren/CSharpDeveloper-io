@@ -10,7 +10,7 @@
     /*Color Scheme Variables*/
     --backGroundColor: #383838;
     /*Header Variables*/
-    --headerHeight: 75px;
+    --headerHeight: 100px;
     /*Navigation Variables*/
     --navHeight: 75px;
     /*Body Variables*/
@@ -31,13 +31,19 @@
 
     grid-column-start: 1;
     grid-column-end: 5;
-}
-.mainHeader p{
     
+}
+.mainHeader table{
+    width:100%;
+}
+.mainHeader td{
+    width:50%;
+}
+.mainHeader img{
+    float:right;
 }
 .mainHeader h1{
-    
-    
+    float:left;
 }
 /*Body Layout*/
 body {
