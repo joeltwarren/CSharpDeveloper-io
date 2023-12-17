@@ -5,15 +5,19 @@
     /*Radius Controls Variables*/
     --borderRadius: 15px;
     --border: 1px solid #ffffff;
+    /*Padding for site Elements Variables*/
+    --elementPadding: 5px;
     /*Color Scheme Variables*/
     --backGroundColor: #383838;
     /*Header Variables*/
     --headerHeight: 75px;
     /*Navigation Variables*/
-    --navHeight: 40px;
+    --navHeight: 75px;
     /*Body Variables*/
     /*Content 1 (left Column) Variables*/
     /*Main Variables*/
+    /*Aside Variables*/
+    --asideWidth: 125px;
     /*Content 2 (right Column) Variables*/
     /*Footer Variables*/
     --footerHeight: 75px;
@@ -24,8 +28,9 @@
     border-radius: var(--borderRadius);
     border: var(--border);
     background-color: var(--backGroundColor);
+
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
 }
 .mainHeader p{
     
@@ -40,7 +45,7 @@ body {
     width: 98vw;
     height: 98vh;
     display: grid;
-    grid-template-columns: .75fr 2fr .75fr;
+    grid-template-columns: 1fr 2fr var(--asideWidth) 1fr;
     grid-template-rows: var(--headerHeight) var(--navHeight) 1fr var(--footerHeight);
     gap: 3px;
     padding: 3px;
@@ -55,42 +60,7 @@ body {
     border: var(--border);
     background-color: var(--backGroundColor);
     grid-column-start: 1;
-    grid-column-end: 4;
-    position:relative;
-    z-index:999;
-    text-align:left;
-
-}
-.navigation ul{
-    list-style-type:none;
-    margin:0px;
-    padding:0px;
-    border-radius: var(--borderRadius);
-    background-color:#000000;
-}
-.navigation li{
-    display:inline-block;
-}
-.navigation li a{
-    color:white;
-    display:block;
-    padding:10px 20px;
-    text-decoration:none;
-}
-.navigation ul ul{
-    position:absolute;
-    top:100%;
-    display:none;
-}
-.navigation ul ul li{
-    display:block;
-}
-.navigation li:hover ul{
-    display:block;
-}
-.navigation ul ul li a:hover{
-    background-color: var(--backGroundColor);
-    border-radius: var(--borderRadius);
+    grid-column-end: 5;
 }
 /*Content 1 - Left Column*/
 .content1 {
@@ -100,6 +70,12 @@ body {
 }
 /*Main Layout - Column 2*/
 .mainContent {
+    border-radius: var(--borderRadius);
+    border: var(--border);
+    background-color: var(--backGroundColor);
+}
+/*Aside Layout - Column 3*/
+.asideMain {
     border-radius: var(--borderRadius);
     border: var(--border);
     background-color: var(--backGroundColor);
@@ -116,5 +92,5 @@ footer {
     border: var(--border);
     background-color: var(--backGroundColor);
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
 }
