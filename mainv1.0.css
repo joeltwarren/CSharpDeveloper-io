@@ -18,7 +18,8 @@
     /*Footer Variables*/
     --footerHeight: 75px;
 }
-
+/* ############################################################################################### */
+/*| START index.html STYLE SECTION |*/
 /*Main Header Layout*/
 .mainHeader {
     border-radius: var(--borderRadius);
@@ -26,13 +27,6 @@
     background-color: var(--backGroundColor);
     grid-column-start: 1;
     grid-column-end: 4;
-}
-.mainHeader p{
-    
-}
-.mainHeader h1{
-    
-    
 }
 /*Body Layout*/
 body {
@@ -119,3 +113,5 @@ footer {
     grid-column-start: 1;
     grid-column-end: 4;
 }
+/*| END index.html STYLE SECTION |*/
+/* ############################################################################################### */

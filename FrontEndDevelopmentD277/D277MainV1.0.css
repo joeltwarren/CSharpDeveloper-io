@@ -12,7 +12,7 @@
     /*Header Variables*/
     --headerHeight: 100px;
     /*Navigation Variables*/
-    --navHeight: 75px;
+    --navHeight: 40px;
     /*Body Variables*/
     /*Content 1 (left Column) Variables*/
     /*Main Variables*/
@@ -22,7 +22,8 @@
     /*Footer Variables*/
     --footerHeight: 45px;
 }
-
+/* ############################################################################################### */
+/*| START D277Main.html Style Section |*/
 /*Main Header Layout*/
 .mainHeader {
     border-radius: var(--borderRadius);
@@ -67,7 +68,49 @@ body {
     background-color: var(--backGroundColor);
     grid-column-start: 1;
     grid-column-end: 5;
+    position: relative;
+    z-index: 999;
+    text-align: left;
 }
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    border-radius: var(--borderRadius);
+    background-color: #000000;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation li a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navigation ul ul {
+    position: absolute;
+    top: 100%;
+   display: none;
+}
+
+.navigation ul ul li {
+    display: block;
+}
+
+.navigation li:hover ul {
+    display: block;
+}
+
+.navigation ul ul li a:hover {
+    background-color: var(--backGroundColor);
+    border-radius: var(--borderRadius);
+    border: var(--border);
+    }
 /*Content 1 - Left Column*/
 .content1 {
     border-radius: var(--borderRadius);
@@ -104,4 +147,6 @@ footer h5{
     margin:auto;
     padding:14px;
 }
+/*| End D277Main.html STYLE SECTION |*/
+/* ############################################################################################### */
     
