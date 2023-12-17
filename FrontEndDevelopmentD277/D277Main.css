@@ -20,7 +20,7 @@
     --asideWidth: 125px;
     /*Content 2 (right Column) Variables*/
     /*Footer Variables*/
-    --footerHeight: 75px;
+    --footerHeight: 45px;
 }
 
 /*Main Header Layout*/
@@ -94,3 +94,8 @@ footer {
     grid-column-start: 1;
     grid-column-end: 5;
 }
+footer h5{
+    margin:auto;
+    padding:14px;
+}
+    
