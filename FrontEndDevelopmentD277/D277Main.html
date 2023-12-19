@@ -4,20 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <title>D277 Georgia - The Peach State</title>
-    <link rel="stylesheet" type="text/css" href="D277MainV1.00.css" />
-    <script>
-    (function(){
-
-      let displayedImage = document.querySelector("#imageDisplayed img");
-      let selectedThumbnail = document.getElementById("thumbnailImages");
-
-      selectedThumbnail.addEventListener("click", displayImage);
-
-      function displayImage(e) {
-        displayedImage.src = e.target.src;
-      }
-    })();
-    </script>
+    <link rel="stylesheet" type="text/css" href="D277MainV1.01.css" />
+    
 </head>
 
 <body>
@@ -28,8 +16,8 @@
                 <td><h1>The Peach State</h1></td>
             </tr>
         </table>
-        
-        
+
+
     </header>
     <nav class="navigation">
         <ul>
@@ -38,7 +26,8 @@
             <li>
                 <a href="#">Cities</a>
                 <ul>
-                    <li><a href="#">Cities 1</a><li>
+                    <li><a href="#">Cities 1</a>
+                    <li>
                     <li><a href="#">Cities 2</a></li>
                 </ul>
             </li>
@@ -70,5 +59,20 @@
         <h5>&copy; Joel Warren &#8212; Western Governers Univeristy &#8212; D277 Front End Web Development | Dec 2023 | </h5>
     </footer>
 
+    <!-- I am loading this script here so that the HTML code will be loaded when the Script loads otherwise it will not change the "imageDisplayed" -->
+    <script>
+        (function () {
+
+            let displayedImage = document.querySelector("#imageDisplayed img");
+            let selectedThumbnail = document.getElementById("thumbnailImages");
+
+            selectedThumbnail.addEventListener("click", displayImage);
+
+            function displayImage(e) {
+                displayedImage.src = e.target.src;
+            }
+        })();
+    </script>
 </body>
+
 </html>

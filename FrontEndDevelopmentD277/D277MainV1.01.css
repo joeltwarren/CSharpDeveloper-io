@@ -128,10 +128,7 @@ body {
     border: var(--border);
     background-color: var(--backGroundColor);
 }
-.mainImage {
-    border-radius: var(--borderRadius);
-}
-.mainPhoto img {
+#imageDisplayed.mainContent img{
     border-radius: var(--borderRadius);
 }
 /*Aside Layout - Column 3*/
