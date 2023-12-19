@@ -5,6 +5,19 @@
     <meta charset="utf-8" />
     <title>D277 Georgia - The Peach State</title>
     <link rel="stylesheet" type="text/css" href="D277MainV1.00.css" />
+    <script>
+    (function(){
+
+      let displayedImage = document.querySelector("#imageDisplayed img");
+      let selectedThumbnail = document.getElementById("thumbnailImages");
+
+      selectedThumbnail.addEventListener("click", displayImage);
+
+      function displayImage(e) {
+        displayedImage.src = e.target.src;
+      }
+    })();
+    </script>
 </head>
 
 <body>
@@ -36,23 +49,17 @@
             <h1>Content 1 - Section</h1>
         </article>
     </section>
-    <main class="mainContent">
-        <table>
-            <tr>
-                <td>
-                    <ul>
-                        <li id="capitalBuilding"><img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" alt="State Capital Building" /></li>
-                        <li id="test"><img src="./Images/D277/GeorgiaPeach.png" alt="Test" /></li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><p>Capital Building &#8212; Atlanta, Ga</p></td>
-            </tr>
-        </table>
+    <main class="mainContent" id="imageDisplayed">
+        <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" alt="" />
+        <!-- <p>Capital Building &#8212; Atlanta, Ga</p>-->
     </main>
-    <aside class="asideMain">
-        <h1>Aside</h1>
+    <aside class="asideMain" id="thumbnailImages">
+        <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
+        <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
+        <img src="./Images/D277/GeorgiaPeach.png" />
+        <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
+        <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
+        <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
     </aside>
     <section class="content2">
         <article>
