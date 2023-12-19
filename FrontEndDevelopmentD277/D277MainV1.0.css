@@ -123,6 +123,25 @@ body {
     border: var(--border);
     background-color: var(--backGroundColor);
 }
+.mainContent ul{
+    list-style-type:none;
+    display:block;
+    padding:0;
+    margin:0;
+}
+.mainContent li{
+    display:inline-block;
+    position:relative;
+    
+}
+.mainContent img{
+     border-radius: var(--borderRadius);
+     display:block;
+     margin-left:auto;
+     margin-right:auto;
+     width:100%;
+     font-weight:100;
+}
 /*Aside Layout - Column 3*/
 .asideMain {
     border-radius: var(--borderRadius);
