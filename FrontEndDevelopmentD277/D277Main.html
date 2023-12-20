@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>D277 Georgia - The Peach State</title>
-    <link rel="stylesheet" type="text/css" href="D277MainV1.01.css" />
+    <link rel="stylesheet" type="text/css" href="D277MainV1.02.css" />
     
 </head>
 
@@ -34,18 +34,24 @@
         </ul>
     </nav>
     <section class="content1">
-        <article>
-            <h1>Content 1 - Section</h1>
+        <article id="interestingFacts">
+            <h1>Interesting Facts</h1>
+            
+            <p>
+                Georgia was one of the original 13 colonies that were established by British colonists in North America in the 17th and 18th centuries.
+                Georgia was founded in 1732. The first settlement in Georgia was established in Savannah in 1733.
+                Georgia became a state in the United States on January 2, 1788.
+            </p>
         </article>
     </section>
     <main class="mainContent" id="imageDisplayed">
-        <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" alt="" />
+        <img src="./Images/D277/13StarsGeorgia.png" alt="" />
         <!-- <p>Capital Building &#8212; Atlanta, Ga</p>-->
     </main>
     <aside class="asideMain" id="thumbnailImages">
+        <img id="13Stars" src="./Images/D277/13StarsGeorgia.png" />
         <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
-        <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
-        <img src="./Images/D277/GeorgiaPeach.png" />
+        <img src="./Images/D277/FishingMap.jpg" />
         <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
         <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
         <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
@@ -70,6 +76,7 @@
 
             function displayImage(e) {
                 displayedImage.src = e.target.src;
+                window.alert(e.getAttribute('id'));
             }
         })();
     </script>
