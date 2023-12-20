@@ -34,10 +34,10 @@
         </ul>
     </nav>
     <section class="content1">
-        <article id="interestingFacts">
+        <article>
             <h1>Interesting Facts</h1>
             
-            <p>
+            <p id="13StarsFact">
                 Georgia was one of the original 13 colonies that were established by British colonists in North America in the 17th and 18th centuries.
                 Georgia was founded in 1732. The first settlement in Georgia was established in Savannah in 1733.
                 Georgia became a state in the United States on January 2, 1788.
@@ -50,11 +50,11 @@
     </main>
     <aside class="asideMain" id="thumbnailImages">
         <img id="13Stars" src="./Images/D277/13StarsGeorgia.png" />
-        <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
-        <img src="./Images/D277/FishingMap.jpg" />
-        <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
-        <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
-        <img src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
+        <img id="Capital" src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
+        <img id="Fishing" src="./Images/D277/FishingMap.jpg" />
+        <img id="Test4"src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
+        <img id="Test5"src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
+        <img id="Test6"src="./Images/D277/GeorgiaStateCapitalBuilding.jpg" />
     </aside>
     <section class="content2">
         <article>
@@ -71,12 +71,17 @@
 
             let displayedImage = document.querySelector("#imageDisplayed img");
             let selectedThumbnail = document.getElementById("thumbnailImages");
+            /*let hiddenP = document.querySelectorAll('.content1');*/
 
             selectedThumbnail.addEventListener("click", displayImage);
 
             function displayImage(e) {
                 displayedImage.src = e.target.src;
-                /*window.alert(e.getAttribute('id'));*/
+                window.alert(e.target.id);
+                if (e.target.id == "13Stars") {
+                    window.alert("Pass the Statement!");
+                    document.getElementById('13StarsFact').style.display = "block";
+                }
             }
         })();
     </script>

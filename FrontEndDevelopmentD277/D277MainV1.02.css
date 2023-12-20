@@ -123,6 +123,10 @@ body {
     border: var(--border);
     background-color: var(--backGroundColor);
 }
+.content1 p {
+    display: none;
+    font-size: 18px;
+}
 /*Main Layout - Column 2*/
 .mainContent {
     border-radius: var(--borderRadius);
