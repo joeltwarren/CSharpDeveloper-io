@@ -16,12 +16,17 @@
     /*Body Variables*/
     /*Content 1 (left Column) Variables*/
     /*Main Variables*/
-    --maxWidth: 600px;
+    --maxWidth: 730px;
     /*Aside Variables*/
     --asideWidth: 125px;
     /*Content 2 (right Column) Variables*/
     /*Footer Variables*/
     --footerHeight: 45px;
+
+    /*Text Size Controls*/
+    --mainH1Size: 40px;
+    --subH1Sizes: 22px;
+    --textContent: 18px;
 }
 /* ############################################################################################### */
 /* CSS RESET*/
@@ -44,13 +49,16 @@
     width:100%;
 }
 .mainHeader td{
-    width:50%;
+    width:50%;    
 }
 .mainHeader img{
     float:right;
+    margin-top:10px;
 }
 .mainHeader h1{
     float:left;
+    margin-top:10px;
+    font-size: var(--mainH1Size);
 }
 /*Body Layout*/
 body {
@@ -101,7 +109,7 @@ body {
 .navigation ul ul {
     position: absolute;
     top: 100%;
-   display: none;
+    display: none;
 }
 
 .navigation ul ul li {
@@ -122,11 +130,18 @@ body {
     border-radius: var(--borderRadius);
     border: var(--border);
     background-color: var(--backGroundColor);
+    
+}
+.content1 h1{
+    font-size: var(--subH1Sizes);
 }
 .content1 p {
     display: none;
-    font-size: 18px;
+    font-size: var(--textContent);
+    text-align: left;
+    padding: 20px 5px;
 }
+
 /*Main Layout - Column 2*/
 .mainContent {
     border-radius: var(--borderRadius);
@@ -157,6 +172,17 @@ body {
     border-radius: var(--borderRadius);
     border: var(--border);
     background-color: var(--backGroundColor);
+}
+.content2 h1{
+    font-size: var(--subH1Sizes);
+}
+.content2 p {
+    font-size: var(--textContent);
+    text-align: left;
+    padding: 10px 20px;
+}
+.content2 ul{
+    list-style-type: none;
 }
 /*Footer Layout*/
 footer {
