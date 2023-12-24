@@ -160,7 +160,7 @@ body {
     background-color: var(--backGroundColor);
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    padding:2px;
     align-items: start;
 }
 .asideMain img{
