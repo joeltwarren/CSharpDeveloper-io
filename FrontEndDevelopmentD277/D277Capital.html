@@ -3,13 +3,21 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>D277 Capital of Georgia</title>
+    <title>D277 Georgia - The Peach State</title>
     <link rel="stylesheet" type="text/css" href="D277MainV1.03.css" />
+
 </head>
 
 <body>
     <header class="mainHeader">
-        <h1>Joel Warren &#8984; | Portfolio Page | &#8984;</h1>
+        <table>
+            <tr>
+                <td><img src="./Images/D277/GeorgiaPeach.png" alt="Georgia Peach" height="73" width="93" /></td>
+                <td><h1>The Peach State</h1></td>
+            </tr>
+        </table>
+
+
     </header>
     <nav class="navigation">
         <ul>
@@ -27,20 +35,83 @@
     </nav>
     <section class="content1">
         <article>
-            <h1>Content 1 - Section</h1>
+            <h1>Interesting Facts</h1>
+            <!-- I am using the inline style for the display property to make this first P element show when you open the page (javascript switch controls the rest) manual <br> tags are necessary here -->
+            <p id="13StarsFact" style="display:block">
+                Georgia was one of the original 13 colonies that were established by British colonists in North America in the 17th and 18th centuries.<br /><br />
+                Georgia was founded in 1732. The first settlement in Georgia was established in Savannah in 1733.<br /><br />
+                Georgia became a state in the United States on January 2, 1788.<br /><br />
+            </p>
+            <p id="stateCapitalFact">
+                The Golden dome of the Georgia State Captol building was originally painted white when constructed in the late 1880's.<br /><br />
+                In 1959 the citizens of Lumpkin County donated enough gold to gild the dome and lantern, giving it its iconic shimmer.<br /><br />
+                The dome was regiled in 1981 to maintain its brilliance.<br /><br />
+            </p>
+            <p id="fishingStateFact">
+                Georgia has not 1 but 3 state fish. Largemouth Bass, Brook Trout, and Striped Bass.<br /><br />
+                Home of the Muskie. The "fish of 10,000 casts" is also the largest member of the pike family weighing in at over 50 pounds!<br /><br />
+                Georgia has a diverse landscape and offers mountain fishing, swamp fishing, and coastline saltwater fishing.<br /><br />
+            </p>
         </article>
     </section>
-    <main class="mainContent">
-        <h1>Main Content</h1>
+    <main class="mainContent" id="imageDisplayed">
+        <img src="./Images/D277/13StarsGeorgia.png" alt="" />
+        <!-- <p>Capitol Building &#8212; Atlanta, Ga</p>-->
     </main>
+    <aside class="asideMain" id="thumbnailImages">
+        <img id="13Stars" src="./Images/D277/13StarsGeorgia.png" />
+        <img id="Capitol" src="./Images/D277/GeorgiaStateCapitolBuilding.jpg" />
+        <img id="Fishing" src="./Images/D277/FishingMap.jpg" />
+    </aside>
     <section class="content2">
         <article>
-            <h1>Content 2 - Section</h1>
+            <h1>State Data</h1>
+            <ul>
+                <li><p>Population: 10,799,566</p></li>
+                <li><p>Founded: 1732</p></li>
+                <li><p>US State: 1788</p></li>
+                <li><p>Region: SouthEastern US</p></li>
+                <li><p>Classification: Urban / Rural</p></li>
+                <li><p>Median Income: $65,030</p></li>
+            </ul>
         </article>
     </section>
     <footer>
-        <h3>&copy; Joel Warren &#8611; Construction Underway &#8610; </h3>
+        <h5>&copy; Joel Warren &#8212; Western Governers Univeristy &#8212; D277 Front End Web Development | Dec 2023 | </h5>
     </footer>
 
+    <!-- I am loading this script here so that the HTML code will be loaded when the Script loads otherwise it will not change the properties -->
+    <script>
+        (function () {
+
+            let displayedImage = document.querySelector("#imageDisplayed img");
+            let selectedThumbnail = document.getElementById("thumbnailImages");
+
+            selectedThumbnail.addEventListener("click", displayImage);
+
+            function displayImage(e) {
+                displayedImage.src = e.target.src;
+                /*window.alert(e.target.id);*/
+                switch (e.target.id) {
+                    case "13Stars":
+                        document.getElementById('13StarsFact').style.display = "block";
+                        document.getElementById('stateCapitalFact').style.display = "none";
+                        document.getElementById('fishingStateFact').style.display = "none";
+                        break;
+                    case "Capitol":
+                        document.getElementById('13StarsFact').style.display = "none";
+                        document.getElementById('stateCapitalFact').style.display = "block";
+                        document.getElementById('fishingStateFact').style.display = "none";
+                        break;
+                    case "Fishing":
+                        document.getElementById('13StarsFact').style.display = "none";
+                        document.getElementById('stateCapitalFact').style.display = "none";
+                        document.getElementById('fishingStateFact').style.display = "block";
+                        break;
+                }
+            }
+        })();
+    </script>
 </body>
+
 </html>
