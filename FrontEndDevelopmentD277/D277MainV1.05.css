@@ -34,7 +34,7 @@
     margin:0;
     padding:0;
 }
-/*| START D277Main.html Style Section |*/
+
 /*Main Header Layout*/
 .mainHeader {
     border-radius: var(--borderRadius);
@@ -60,7 +60,7 @@
     margin-top:10px;
     font-size: var(--mainH1Size);
 }
-/*Body Layout*/
+/*Body Main Layout*/
 body {
     background-color: black;
     width: 98vw;
@@ -83,7 +83,19 @@ body {
     color: white;
     text-align: center;
 }
-/*Navigation Layout*/
+/*Body City-Layout*/
+#cityLayout {
+    background-color: black;
+    width: 98vw;
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 800px 1fr 1fr;
+    grid-template-rows: var(--headerHeight) var(--navHeight) 1fr var(--footerHeight);
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+/*Navigation Layout all layouts*/
 .navigation {
     border-radius: var(--borderRadius);
     border: var(--border);
@@ -133,7 +145,7 @@ body {
     border-radius: var(--borderRadius);
     border: var(--border);
     }
-/*Content 1 - Left Column*/
+/*Main Layout Content 1 - Left (1st) Column && Not Used in City Layout at all*/
 .content1 {
     border-radius: var(--borderRadius);
     border: var(--border);
@@ -157,12 +169,11 @@ body {
     font-size: var(--textContent);
 }
 
-/*Main Layout - Column 2*/
+/*Main Layout - Column 2 && City Layout - Column 1*/
 .mainContent {
     border-radius: var(--borderRadius);
     border: var(--border);
     background-color: var(--backGroundColor);
-    
 }
 #imageDisplayed.mainContent img {
     border-radius: var(--borderRadius);
@@ -172,7 +183,7 @@ body {
     border-radius: var(--borderRadius);
     width: 800px;
 }
-/*Aside Layout - Column 3*/
+/*Main Aside Layout - Column 3*/
 .asideMain {
     border-radius: var(--borderRadius);
     border: var(--border);
@@ -186,7 +197,26 @@ body {
     border-radius: var(--borderRadius);
     width:100%;
 }
-/*Content 2 - Column 4*/
+/* City Layout Aside - Column 2*/
+.asideCityLayout {
+    border-radius: var(--borderRadius);
+    border: var(--border);
+    background-color: var(--backGroundColor);
+}
+.asideCityLayout h1{
+    font-size: var(--subH1Sizes);
+}
+.asideCityLayout ul{
+    list-style-type: none;
+}
+.asideCityLayout ul{
+    text-align: left;
+}
+.asideCityLayout ul li{
+    padding: 10px 20px;
+    font-size: var(--textContent);
+}
+/*Main Layout Content 2 - Column 4 && City Layout - Column 3*/
 .content2 {
     border-radius: var(--borderRadius);
     border: var(--border);
@@ -215,6 +245,6 @@ footer h5{
     margin:auto;
     padding:14px;
 }
-/*| End D277Main.html STYLE SECTION |*/
+
 /* ############################################################################################### */
     
