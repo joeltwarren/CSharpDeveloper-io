@@ -95,6 +95,50 @@ body {
     color: white;
     text-align: center;
 }
+/*Body InfoPage*/
+.infoLayout {
+    background-color: black;
+    width: 98vw;
+    height: 98vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: var(--headerHeight) var(--navHeight) 1fr var(--footerHeight);
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+.dataTable {
+    border-collapse:separate;
+    border-radius: var(--borderRadius);
+    border: var(--border);
+    background-color: var(--backGroundColor);
+    width: 98vw;
+    height: 80vh;
+}
+.dataTable tr {
+    height:75px;
+}
+.dataTable td {
+    border-radius: var(--borderRadius);
+    border: var(--border);
+    border-spacing: 1px;
+    font-size: var(--textContent);
+    
+}
+.dataTable th {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
+    font-size:var(--subH1Sizes);
+}
+.dataTable a {
+    text-decoration: none;
+    color: white;
+}
+.dataTable a:hover {
+    background-color: black;
+}
+.dataTable td:hover {
+    background-color: black;
+}
 /*Navigation Layout all layouts*/
 .navigation {
     border-radius: var(--borderRadius);
@@ -245,6 +289,7 @@ footer h5{
     margin:auto;
     padding:14px;
 }
+
 
 /* ############################################################################################### */
     
