@@ -139,7 +139,44 @@ body {
 .dataTable td:hover {
     background-color: black;
 }
-/*Navigation Layout all layouts*/
+/* Contact Us Layout*/
+.contactUs {
+    background-color: black;
+    width: 98vw;
+    height: 98vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: var(--headerHeight) var(--navHeight) 1fr var(--footerHeight);
+    font-weight: 100;
+    color: white;
+    text-align: left;
+}
+.contactUs form {
+    font-size: var(--textContent);
+    border-collapse: separate;
+    border-radius: var(--borderRadius);
+    border: var(--border);
+    background-color: var(--backGroundColor);
+    width: 98vw;
+    height: 80vh;
+    padding: 10px 0px 10px 20px;
+}
+.contactUs form h1 {
+    font-size: var(--subH1Sizes);
+    padding: 10px 0px 10px 0px;
+}
+.contactUs form input {
+    width: 400px;
+    padding:5px 10px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+}
+.contactUs form button {
+    height:35px;
+    width:200px;
+    margin:10px 0px 0px 0px;
+}
+/*Navigation Layout uniform*/
 .navigation {
     border-radius: var(--borderRadius);
     border: var(--border);
@@ -189,12 +226,14 @@ body {
     border-radius: var(--borderRadius);
     border: var(--border);
     }
+#mainProfilePageReturn{
+    float:right;
+}
 /*Main Layout Content 1 - Left (1st) Column && Not Used in City Layout at all*/
 .content1 {
     border-radius: var(--borderRadius);
     border: var(--border);
     background-color: var(--backGroundColor);
-    
 }
 .content1 h1{
     font-size: var(--subH1Sizes);

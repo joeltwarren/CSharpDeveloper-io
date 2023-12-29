@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>D277 Contact Us Page</title>
+    <link rel="stylesheet" type="text/css" href="D277MainV1.06.css" />
+
+</head>
+
+<body class="contactUs">
+    <header class="mainHeader">
+        <table>
+            <tr>
+                <td><img src="./Images/D277/GeorgiaPeach.png" alt="Georgia Peach" height="73" width="93" /></td>
+                <td><h1>The Peach State</h1></td>
+            </tr>
+        </table>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="https://www.csharpdeveloper.io/FrontEndDevelopmentD277/D277Main.html">Home</a></li>
+            <li><a href="https://www.csharpdeveloper.io/FrontEndDevelopmentD277/D277Capital.html">Capital</a></li>
+            <li>
+                <a href="#">Cities</a>
+                <ul>
+                    <li><a href="https://www.csharpdeveloper.io/FrontEndDevelopmentD277/D277Macon.html">Macon</a></li>
+                    <li><a href="https://www.csharpdeveloper.io/FrontEndDevelopmentD277/D277Dublin.html">Dublin</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.csharpdeveloper.io/FrontEndDevelopmentD277/D277InfoPage.html">More Information</a></li>
+            <li><a href="https://www.csharpdeveloper.io/FrontEndDevelopmentD277/D277ContacusUs.html">Contact Us</a></li>
+            <li id="mainProfilePageReturn"><a href="https://www.csharpdeveloper.io">Return To Main Profile Page</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form>
+            <h1>Please provide your contact information below.</h1>
+            <label for="fname">First Name:</label><br />
+            <input type="text" id="fname" name="fname" placeholder="First Name" /><br />
+            <label for="lname">Last Name:</label><br />
+            <input type="text" id="lname" name="lname" placeholder="Last Name" /><br />
+            <label for="email">Email:</label><br />
+            <input type="text" id="email" name="email" placeholder="Email" /><br />
+            <label for="emailVerify">Verify Email:</label><br />
+            <input type="text" id="emailVerify" name="emailVerify" placeholder="Re-enter Email" /><br />
+            <label for="information"> Provide details of your request below</label><br />
+            <textarea id="information" name="information" placeholder="Enter information here..." rows="15" cols="52"></textarea><br />
+            <button type="button" id="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <h5>&copy; Joel Warren &#8212; Western Governers Univeristy &#8212; D277 Front End Web Development | Dec 2023 | </h5>
+    </footer>
+    <script>
+        let input1 = document.getElementById("email");
+        let input2 = document.getElementById("emailVerify");
+        let buttonClicked = document.getElementById("submit");
+        buttonClicked.addEventListener("click", function () { emailVerify(input1.value, input2.value); }); 
+        function emailVerify(field1, field2) {
+            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            if (field1 == field2) {
+                window.alert("Email addresses entered matched Your form would have been submitted now.");
+            }
+        }
+    </script>
+</body>
+
+</html>
