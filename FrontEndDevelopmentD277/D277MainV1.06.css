@@ -264,7 +264,7 @@ body {
 }
 .mainContent img {
     border-radius: var(--borderRadius);
-    width: 600px;
+    width: 100%;
 }
 /*Main Aside Layout - Column 3*/
 .asideMain {
