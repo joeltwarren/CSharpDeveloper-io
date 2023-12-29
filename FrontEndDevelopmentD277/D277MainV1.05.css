@@ -89,7 +89,7 @@ body {
     width: 98vw;
     height: 98vh;
     display: grid;
-    grid-template-columns: 800px 1fr 1fr;
+    grid-template-columns: 600px 1fr 1fr;
     grid-template-rows: var(--headerHeight) var(--navHeight) 1fr var(--footerHeight);
     font-weight: 100;
     color: white;
@@ -181,7 +181,7 @@ body {
 }
 .mainContent img {
     border-radius: var(--borderRadius);
-    width: 800px;
+    width: 600px;
 }
 /*Main Aside Layout - Column 3*/
 .asideMain {
