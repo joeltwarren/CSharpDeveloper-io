@@ -30,6 +30,7 @@
             </li>
             <li><a href="https://www.csharpdeveloper.io/FrontEndDevelopmentD277/D277InfoPage.html">More Information</a></li>
             <li><a href="https://www.csharpdeveloper.io/FrontEndDevelopmentD277/D277ContactUs.html">Contact Us</a></li>
+            <li><a href="https://www.csharpdeveloper.io/FrontEndDevelopmentD277/D277References.html">References</a></li>
             <li id="mainProfilePageReturn"><a href="https://www.csharpdeveloper.io">Return To Main Profile Page</a></li>
         </ul>
     </nav>
@@ -60,8 +61,14 @@
         buttonClicked.addEventListener("click", function () { emailVerify(input1.value, input2.value); }); 
         function emailVerify(field1, field2) {
             var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-            if (field1 == field2) {
+            if (field1 == field2 && field1 != "") {
                 window.alert("Email addresses entered matched Your form would have been submitted now.");
+            }
+            else if (field1 == "" || field2 == "") {
+                window.alert("Email is required.");
+            }
+            else {
+                window.alert("Your email addresses entered did not match please try again.");
             }
         }
     </script>
