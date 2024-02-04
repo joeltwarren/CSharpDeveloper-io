@@ -1,0 +1,10 @@
+{
+  "routes": [
+    "/dataview",
+    "/footer",
+    "/header",
+    "/navigation",
+    "/references",
+    "/svgmap"
+  ]
+}
